@@ -1,5 +1,7 @@
 # GithubPractice
 
+I am learning GitHub Foundations Certification Course from https://www.youtube.com/watch?v=Jdc0i7RcBv8
+
 # Cloning
 
 There are 3 ways to clone a Github repository :- HTTPS, SSH, Github CLI
@@ -68,6 +70,14 @@ Reset allows you to move the changes from Stagged Changes to Unstaged. This is u
 
 ```
 git reset
+```
+
+# Push
+
+When we want to push our repo to our remote ourigin (Github Portal). 
+
+```
+git push
 ```
 
 ## Git Log
