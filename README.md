@@ -30,7 +30,13 @@ When we want to move the changes from Stagged state to the Commited state, we us
 git commit
 ```
 
-Wehn we want to commit and use the command, this will open up the commit edit message in the editor of choice.
+When we want to commit and use the command, this will open up the commit edit message in the editor of choice.
+
+> Make a commit amd add a message without openning the editor. This can be done from terminal.
+
+```
+git commit -m "message"
+```
 
 
 # Status
@@ -64,4 +70,27 @@ Reset allows you to move the changes from Stagged Changes to Unstaged. This is u
 git reset
 ```
 
+## Git Log
+
+Shows the logs when you made the modifications to your git repository.
+
+```
+git log
+```
+
+## Git Config file
+
+This helps you store your global configurations for git such as email, name, editor and more.
+
+```
+git config --list
+```
+After running the above command it shows the connets of our `.gitconfig` file.
+
+When you first install git on your machine, you are supposed to setup ypur name and email.
+
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
 
