@@ -6,12 +6,66 @@ I am learning GitHub Foundations Certification Course from https://www.youtube.c
 
 There are 3 ways to clone a Github repository :- HTTPS, SSH, Github CLI
 
-> HTTPS
+>> HTTPS
 
 We clone the repository by using the command `git clone` followed by the URL of the repository.
 
 ```
 git clone https://github.com/akash12245/GithubPractice.git
+```
+
+> You will need to generate Personal Access Token (PAT) from https://github.com/settings/tokens?type=beta
+
+You will need to give access token which you genrate and github User Name from the above URL to push from local env to github remote origin.
+
+- Give it access to conntents for "Commits".
+
+>> SSH
+
+- You can watch https://www.youtube.com/watch?v=Jdc0i7RcBv8 at `1 hour 51 mins` timestamp.
+- This is a much more complicated clonning method compared to HTTPS.
+
+```
+git clone git@github.com:akash12245/GithubPractice.git
+```
+We will need to create our own ssh rsa key pair.
+
+```
+sshe-keygen -t rsa
+```
+
+We can test our connections with Github by running below command.
+```
+ssh -T git@github.com
+```
+
+For WSL users and if you create a non default key, you might need to add it.
+
+```
+ssh-add 
+```
+>> Github CLI
+
+- You can watch https://www.youtube.com/watch?v=Jdc0i7RcBv8 at `2 hour 08 mins` timestamp.
+- This is a much more complicated clonning method compared to HTTPS.
+
+First, we need to install the CLI.
+
+e.g. Linux(Ubuntu), run the below command to install the CLI
+
+```
+(type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
+&& sudo mkdir -p -m 755 /etc/apt/keyrings \
+&& wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+&& sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+&& sudo apt update \
+&& sudo apt install gh -y
+```
+
+```
+gh auth login
+gh repo clone akash12245/GithubPractice
 ```
 
 ## Git Hidden Folder
@@ -79,6 +133,10 @@ When we want to push our repo to our remote ourigin (Github Portal).
 ```
 git push
 ```
+
+# Branching
+
+
 
 ## Git Log
 
