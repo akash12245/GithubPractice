@@ -136,7 +136,18 @@ git push
 
 # Branching
 
+- To see the list of branches.
 
+```
+git branch
+```
+
+- Creates a new Branch
+
+```
+git branch branch-name
+git branch dev
+```
 
 ## Git Log
 
