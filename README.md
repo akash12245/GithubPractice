@@ -149,6 +149,16 @@ git branch branch-name
 git branch dev
 ```
 
+- To checkout the Branch (Shift to the Brach section from main)
+
+```
+git checkout dev
+```
+
+As the Branch `dev` was not created in the Github repository, So there will be conflicts when we try to push the changes made from local to Github repo.
+
+
+
 ## Git Log
 
 Shows the logs when you made the modifications to your git repository.
