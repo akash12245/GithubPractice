@@ -136,10 +136,17 @@ git push
 
 # Branching
 
+- You can watch https://www.youtube.com/watch?v=Jdc0i7RcBv8 at `2 hour 15 mins` timestamp.
+
 - To see the list of branches.
 
 ```
 git branch
+```
+- To see ALL the list of branches, along with Github Repo branches.
+
+```
+git branch -a
 ```
 
 - Creates a new Branch
@@ -162,12 +169,39 @@ So to push the changes made in Dev to Github repo, we have to run below command.
 git push -u origin dev
 ```
 
+To check the difference between the contents of the Github repo with the `LOCAL repo`, then run the following command-
+
+```
+git fetch
+```
+If there are differences present between the contents of the Github repo with the `LOCAL repo` and you want to copy it from Github repo to the LOCAL repo, then run the following command-
+
+```
+git pull origin main
+```
+
 ### Branching Extension for Branching
 - Git Graph
 - git-log--graph
 
+# Merging
 
+When you have created a different branch (not main) and made changes on the other branch and whish to `MERGE` it whith main, then run the following command-
 
+```
+git merge main
+```
+- It may give error stating that Merging `CONFLICTS` are there, then we have to see in which portion conflicts are comming and see which portion we want to keep MANUALLY.
+
+## Stashing
+
+```
+git stash list
+git stash
+git stash save my-name
+git stash apply
+git stash pop
+```
 
 ## Git Log
 
