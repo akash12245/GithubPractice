@@ -156,6 +156,16 @@ git checkout dev
 ```
 
 As the Branch `dev` was not created in the Github repository, So there will be conflicts when we try to push the changes made from local to Github repo.
+So to push the changes made in Dev to Github repo, we have to run below command.
+
+```
+git push -u origin dev
+```
+
+### Branching Extension for Branching
+- Git Graph
+- git-log--graph
+
 
 
 
