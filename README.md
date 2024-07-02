@@ -2,6 +2,8 @@
 
 I am learning GitHub Foundations Certification Course from https://www.youtube.com/watch?v=Jdc0i7RcBv8
 
+2nd Video: - https://www.youtube.com/watch?v=zTjRZNkhiEU
+
 For Github Fundamentals Couse, learn - 
 ```
 https://learn.microsoft.com/en-us/collections/o1njfe825p602p/
@@ -223,6 +225,10 @@ Shows the logs when you made the modifications to your git repository.
 ```
 git log
 ```
+```
+git log --oneline
+```
+- To escape from `git log --oneline` command press `q`.
 
 ## Git Config file
 
@@ -240,3 +246,6 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
+## Git Ignore
+
+If we want Git to ignore some files and not track it then we have to create a `.gitignore` file and add the names of the files which we don't want to track.
