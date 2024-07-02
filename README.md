@@ -7,6 +7,14 @@ For Github Fundamentals Couse, learn -
 https://learn.microsoft.com/en-us/collections/o1njfe825p602p/
 ```
 
+# Initialize
+
+To initialize a directory(folder), and track it. We have to run the below command-
+
+```
+git init
+```
+
 # Cloning
 
 There are 3 ways to clone a Github repository :- HTTPS, SSH, Github CLI
